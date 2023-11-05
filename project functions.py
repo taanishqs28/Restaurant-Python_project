@@ -2,7 +2,7 @@ from database import db,MyCur
 
 def MDISPLAY():
     print('Our Menu is as Follows: ')
-    SQL="SELECT * FROM FOODITEMS"
+    SQL= "SELECT * FROM FOODITEMS"
     MyCur.execute(SQL)
     L=MyCur.fetchall()
     for sno, foodname, price,cuisine in L:
@@ -463,5 +463,6 @@ while True:
 
     elif ch in['E','e']:
         break
+        
         
         
